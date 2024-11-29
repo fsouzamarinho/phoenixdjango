@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Detalhes da produção{% endblock %}
+
+{% block content %}
+
+{% comment %}
+<p>Roupa: {{ object.roupa }}</p>
+<p><strong>Quantidade:</strong> {{ object.quantidade}}</p>
+<p><strong>Data:</strong> {{ object.data}}</p>
+<p><strong>Valor total:</strong> {{ object.valorTotal}}</p>
+{% endcomment %}
+
+
+<div class="alert alert-secondary" role="alert">
+    <h2><strong>{{ object.roupa}}</strong></h2>
+</div>
+<ul class="list-group">
+    <li class="list-group-item"><p><strong>Quantidade:</strong> {{ object.quantidade}}</p></li>
+    <li class="list-group-item"><p><strong>Data:</strong> {{ object.data}}</p></li>
+    <li class="list-group-item"><p><strong>Valor total:</strong> {{ object.valorTotal}}</p></li>
+  </ul>
+{% endblock %}
